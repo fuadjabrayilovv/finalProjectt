@@ -1,14 +1,22 @@
 package com.example.finalproject.dto;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
 
 @Data
 @ToString
-public class CarDto {
+@Builder
+public class CarResponseDto {
+    Integer year;
     String make;
+    private Integer price;
     String model;
-    int price;
-    int year;
-    int mileage;
+    private Integer mileage;
+    String driveTrain;
+    String Transmission;
+    String fuelType;
+    String exteriorColor;
+    String interiorColor;
+
 }
