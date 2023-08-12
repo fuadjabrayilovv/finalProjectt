@@ -1,4 +1,4 @@
-package com.example.finalproject.entity;
+package com.example.finalproject.entity.Car;
 
 
 import lombok.*;

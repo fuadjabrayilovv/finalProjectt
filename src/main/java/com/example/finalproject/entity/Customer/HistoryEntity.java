@@ -1,6 +1,6 @@
-package com.example.finalproject.entity;
+package com.example.finalproject.entity.Customer;
 
-import com.sun.istack.NotNull;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,19 +16,22 @@ import javax.persistence.Id;
 @NoArgsConstructor(force = true)
 @AllArgsConstructor
 @Data
-public class LoginEntity {
-
+public class HistoryEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-//    @NotNull
-//    private String username;
-    @NotNull
+
     private String email;
 
-    @NotNull
-    private String role;
+    private Integer productionYear;
+    private Integer price;
+    private String make;
+    private String model;
+    private Integer mileage;
 
-    @NotNull
-    private String password;
+    private String driveTrain;
+    private String Transmission;
+    private String fuelType;
+    private String exteriorColor;
+    private String interiorColor;
 }

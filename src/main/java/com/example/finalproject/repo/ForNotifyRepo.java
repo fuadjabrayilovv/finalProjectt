@@ -1,11 +1,9 @@
 package com.example.finalproject.repo;
 
-import com.example.finalproject.entity.NotifyEntity;
+import com.example.finalproject.entity.Car.NotifyEntity;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-
-import java.util.List;
 
 @ConfigurationProperties(prefix="spring.datasourcesecond")
 @Repository

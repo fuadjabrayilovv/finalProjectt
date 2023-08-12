@@ -1,13 +1,8 @@
-package com.example.finalproject.controller;
+package com.example.finalproject.API;
 
-import com.example.finalproject.dto.ZipDto;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
-import org.springframework.http.*;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestClientException;
-import org.springframework.web.client.RestTemplate;
 
 @RestController(value = "carApi")
 @RequestMapping("carApi")

@@ -1,7 +1,7 @@
 package com.example.finalproject.Specification;
 
 import com.example.finalproject.dto.FilterDto;
-import com.example.finalproject.entity.Car.CarEntity;
+import com.example.finalproject.entity.Customer.SavedSearchEntity;
 import com.example.finalproject.repo.CarRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.data.jpa.domain.Specification;
@@ -9,12 +9,13 @@ import org.springframework.data.jpa.domain.Specification;
 import javax.persistence.criteria.Predicate;
 import java.util.ArrayList;
 import java.util.List;
+
 @AllArgsConstructor
-public class CarSpecification {
+public class SavedSearchSpecification {
     public final CarRepository carRepository;
 
 
-    public static Specification<CarEntity> withFilter(FilterDto dto) {
+    public static Specification<SavedSearchEntity> withFilter(FilterDto dto) {
         return (root, query, criteriaBuilder) -> {
             List<Predicate> predicates = new ArrayList<>();
 

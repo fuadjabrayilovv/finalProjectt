@@ -1,7 +1,6 @@
 package com.example.finalproject.repo;
 
-import com.example.finalproject.dto.FilterDto;
-import com.example.finalproject.entity.CarEntity;
+import com.example.finalproject.entity.Car.CarEntity;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
